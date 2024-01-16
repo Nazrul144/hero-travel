@@ -581,7 +581,54 @@ ul {
 
 /*My own section design ends here*/
 
+/*Simple container design starts here*/
+.simple-container {
+    background-color:#FFF;
+    max-width: 1440px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
 
+.simple-text-div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.simple-title {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+    padding-left: 10px;
+}
+
+.simple-description {
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+.text-div li {
+    color: #131318;
+    font-family: Mulish;
+    font-weight: 700;
+    padding-left: 10px;
+}
+
+.see-more-btn {
+    width: 174px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: 0;
+    color:#FFF;
+    font-size: 1.25rem;
+    padding: 15px 25px;
+    margin-top: 50px;
+}
+
+/*Simple container design ends here*/
 
 
 
@@ -792,15 +839,33 @@ ul {
 
 
     /*Private section responsive starts*/
-    .package-div-images img, .adventur-title {
+    .package-div-images img,
+    .adventur-title {
         width: 335px;
         font-size: 1.2rem;
         object-fit: cover;
         margin-left: 100px;
         border: 2px solid red;
     }
-    .para{
+
+    .para {
         font-size: 1rem;
     }
+
     /*Private section responsive ends*/
+
+    /*Simple section responsive starts*/
+    .simple-text-div, .simple-container, .simple-text-div img{
+        flex-direction: column;
+        width: 335px;
+        padding-top: 15px;
+    }
+    .simple-title{
+        font-size: 1.25rem;
+    }
+    
+    
+    /*Simple section responsive ends*/
+
+
 }
