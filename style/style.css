@@ -195,7 +195,7 @@ ul {
 
 
 /*Images section*/
-.images-container{
+.images-container {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -211,7 +211,7 @@ ul {
 
 .grid-item-1 {
     grid-column: 1/span 6;
-    
+
 }
 
 .grid-item-2 {
@@ -239,7 +239,7 @@ ul {
     grid-column: 5/span 8;
 }
 
-.Maldives{
+.Maldives {
     position: absolute;
     color: #FFF;
     font-family: Mulish;
@@ -248,7 +248,8 @@ ul {
     margin-left: 320px;
     margin-top: 200px;
 }
-.Indonesia{
+
+.Indonesia {
     position: absolute;
     color: #FFF;
     font-family: Mulish;
@@ -257,7 +258,8 @@ ul {
     margin-left: 1020px;
     margin-top: 200px;
 }
-.Srilanka{
+
+.Srilanka {
     position: absolute;
     color: #FFF;
     font-family: Mulish;
@@ -266,7 +268,8 @@ ul {
     margin-left: 120px;
     margin-top: 680px;
 }
-.North-America{
+
+.North-America {
     position: absolute;
     color: #FFF;
     font-family: Mulish;
@@ -275,7 +278,8 @@ ul {
     margin-left: 622px;
     margin-top: 680px;
 }
-.Kashmir{
+
+.Kashmir {
     position: absolute;
     color: #FFF;
     font-family: Mulish;
@@ -284,33 +288,98 @@ ul {
     margin-left: 1200px;
     margin-top: 680px;
 }
-.Bangladesh{
+
+.Bangladesh {
     position: absolute;
     color: #FFF;
     font-family: Mulish;
     font-size: 1.75rem;
     font-weight: 800;
     margin-left: 150px;
-    margin-top: 1180px;
+    margin-top: 1140px;
 }
-.Bandarban{
+
+.Bandarban {
     position: absolute;
     color: #FFF;
     font-family: Mulish;
     font-size: 1.75rem;
     font-weight: 800;
     margin-left: 885px;
-    margin-top: 1180px;
+    margin-top: 1140px;
 }
 
 /*Destination section ends here*/
+
+
+
 
 /*Chose container starts here*/
 .chose-container{
     max-width: 1440px;
     background-color: aquamarine;
-    
+    margin: auto;
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
 }
+
+.description {
+    color: rgba(19, 19, 24, 0.70);
+    text-align: center;
+    font-family: Mulish;
+    font-weight: 400;
+    font-size: 1rem;
+    margin-top: 24px;
+}
+
+.main-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+  
+}
+
+.first-part {
+    border: 2px solid tomato;
+    width: 50%;
+}
+
+.second-part {
+    border: 2px solid black;
+    width: 50%;
+}
+
+.title{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: left;
+}
+
+.title{
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: left;
+}
+.description{
+    color: #5A5A5D;
+    font-family: Mulish;
+    font-weight: 400;
+}
+.last-div{
+    border: 2px solid rebeccapurple;
+    width: 570px;
+    margin: 0 auto;
+}
+
+
 /*Chose container ends here*/
 
 
@@ -459,22 +528,44 @@ ul {
     /*Our popular tour section responsive ends here*/
 
     /*grid content responsive starts here*/
-        .destination-container{
-            width:335px
-        }
-        .destination-title{
-            font-size: 1.25rem;
-            padding: 5px;
-        }
-        .destination-title{
-            font-size: 0.875;
-            padding: 5px;
-        }
-        .images-container{
-            grid-template-columns: repeat(1, 1fr);
-            grid-template-rows: repeat(7, 1fr);
-        }
-       
+    .destination-container {
+        width: 335px
+    }
+
+    .destination-title {
+        font-size: 1.25rem;
+        padding: 5px;
+    }
+
+    .destination-title {
+        font-size: 0.875;
+        padding: 5px;
+    }
+
+    .images-container {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+    }
+
     /*grid content responsive ends here*/
+
+    /*Why chose us responsive starts here*/
+    .main-div, .chose-container, .first-part, .second-part, .last-div, .title{
+        flex-direction: column;
+        width: 335px;
+    }
+    .title{
+        font-size: 1.25rem;
+        padding-left: 10px;
+    }
+   .chose-titile{
+    font-size: 1.25rem;
+    padding-top: 10px;
+   }
+   .description{
+    font-size: 0.875rem;
+    padding: 0 10px;
+   }
+    /*Why chose us responsive ends here*/
 
 }
