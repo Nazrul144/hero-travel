@@ -1,5 +1,9 @@
+/*Google fonts added here*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lobster&family=Merriweather:wght@400;700;900&family=Mulish:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&family=Work+Sans:wght@300;400;500;600;700;800&display=swap');
+
 body {
     font-family: 'Mulish', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav-container {
@@ -315,7 +319,7 @@ ul {
 
 
 /*Chose container starts here*/
-.chose-container{
+.chose-container {
     max-width: 1440px;
     background-color: aquamarine;
     margin: auto;
@@ -335,12 +339,12 @@ ul {
     margin-top: 24px;
 }
 
-.main-div{
+.main-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 10px;
-  
+
 }
 
 .first-part {
@@ -353,7 +357,7 @@ ul {
     width: 50%;
 }
 
-.title{
+.title {
     color: #131318;
     font-family: Mulish;
     font-size: 1.5rem;
@@ -361,26 +365,164 @@ ul {
     text-align: left;
 }
 
-.title{
+.title {
     color: #131318;
     font-family: Mulish;
     font-size: 1.5rem;
     font-weight: 800;
     text-align: left;
 }
-.description{
+
+.description {
     color: #5A5A5D;
     font-family: Mulish;
     font-weight: 400;
 }
-.last-div{
+
+.last-div {
     border: 2px solid rebeccapurple;
     width: 570px;
     margin: 0 auto;
 }
 
-
 /*Chose container ends here*/
+
+
+/*Deals and Discount starts here*/
+.deals-discount-container {
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: peru;
+    position: relative;
+}
+
+.text-container {
+    width: 100%;
+}
+
+.text-container .text {
+    color: #131318;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-top: 24px;
+}
+
+.image-one img {
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.information {
+    width: 579px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    border: 2px solid black;
+    position: absolute;
+    top: 200px;
+    right: 50px;
+    padding-left: 25px;
+    border: 0;
+}
+
+.tour {
+    color: #131318;
+    font-family: Mulish;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.price {
+    color: #FF5400;
+    font-family: Mulish;
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+
+.book {
+    width: 150px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    border: 0;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.25rem;
+    font-weight: 800;
+    padding: 10px 20px;
+}
+
+.information-two {
+    width: 579px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    border: 2px solid black;
+    position: absolute;
+    top: 800px;
+    left: 50px;
+    padding-left: 25px;
+    border: 0;
+}
+
+.information-three {
+    width: 579px;
+    height: 389px;
+    border-radius: 16px;
+    border: 2px solid #FFF;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    border: 2px solid black;
+    position: absolute;
+    bottom: 180px;
+    right: 50px;
+    padding-left: 25px;
+    border: 0;
+}
+
+.book_btn {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 52px;
+    border-radius: 8px;
+    background: #FF5400;
+    margin: 18px auto;
+    border: 0;
+    color: #FFF;
+    padding: 14px 22px;
+    color: #FFF;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.25rem;
+    font-weight: 800;
+    
+
+}
+
+/*Deals and Discount ends here*/
+
+ /*My own section design starts here*/
+ .private-container{
+    background-color: indianred;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.packages{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+/*My own section design ends here*/
+
 
 
 
@@ -423,9 +565,8 @@ ul {
 
     /*Navbar responsive start here*/
     .nav-container {
-        max-width: 375px;
+        max-width: 335px;
         height: 64px;
-        border: 2px solid red;
         margin: 0 auto;
         flex-direction: column;
         justify-content: space-between;
@@ -452,7 +593,7 @@ ul {
     }
 
     .fa-solid {
-        margin-left: 130px;
+        margin-left: 100px;
         visibility: visible;
     }
 
@@ -462,7 +603,7 @@ ul {
     /*Banner responsive starts here*/
 
     .banner-container {
-        max-width: 375px;
+        max-width: 335px;
         height: 485px;
         flex-direction: column;
         width: 100%;
@@ -485,7 +626,6 @@ ul {
         align-items: center;
         margin-top: 65px;
         gap: 16px;
-        border: 3px solid red;
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.30);
     }
@@ -550,22 +690,46 @@ ul {
     /*grid content responsive ends here*/
 
     /*Why chose us responsive starts here*/
-    .main-div, .chose-container, .first-part, .second-part, .last-div, .title{
+    .main-div,
+    .chose-container,
+    .first-part,
+    .second-part,
+    .last-div,
+    .title {
         flex-direction: column;
         width: 335px;
     }
-    .title{
+
+    .title {
         font-size: 1.25rem;
         padding-left: 10px;
     }
-   .chose-titile{
-    font-size: 1.25rem;
-    padding-top: 10px;
-   }
-   .description{
-    font-size: 0.875rem;
-    padding: 0 10px;
-   }
+
+    .chose-titile {
+        font-size: 1.25rem;
+        padding-top: 10px;
+    }
+
+    .description {
+        font-size: 0.875rem;
+        padding: 0, 10px;
+    }
+
     /*Why chose us responsive ends here*/
 
+    /*Deals and Discount responsive starts*/
+    .deals-discount-container,
+    .image-one img {
+        width: 335px;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .information,
+    .information-two,
+    .information-three {
+        display: none;
+    }
+
+    /*Deals and Discount responsive ends*/
 }
