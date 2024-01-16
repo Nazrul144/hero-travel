@@ -321,7 +321,7 @@ ul {
 /*Chose container starts here*/
 .chose-container {
     max-width: 1440px;
-    background-color: aquamarine;
+    background: #FFF;
     margin: auto;
     color: #131318;
     text-align: center;
@@ -345,16 +345,43 @@ ul {
     align-items: center;
     gap: 10px;
 
+
+}
+
+.first-part img {
+    display: flex;
+    justify-content: left;
+
+}
+
+.second-part img {
+    display: flex;
+    justify-content: left;
+
+}
+
+.last-div img {
+    display: flex;
+    justify-content: left;
 }
 
 .first-part {
-    border: 2px solid tomato;
-    width: 50%;
+    width: 48%;
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
 }
 
 .second-part {
-    border: 2px solid black;
-    width: 50%;
+    width: 48%;
+
+    height: 284px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
 }
 
 .title {
@@ -380,9 +407,13 @@ ul {
 }
 
 .last-div {
-    border: 2px solid rebeccapurple;
-    width: 570px;
     margin: 0 auto;
+    padding-bottom: 20px;
+    width: 573px;
+    height: 284px;
+    border-radius: 16px;
+    border: 1px solid rgba(41, 206, 246, 0.20);
+    background: rgba(41, 206, 246, 0.05);
 }
 
 /*Chose container ends here*/
@@ -504,24 +535,50 @@ ul {
     font-family: Mulish;
     font-size: 1.25rem;
     font-weight: 800;
-    
+
 
 }
 
 /*Deals and Discount ends here*/
 
- /*My own section design starts here*/
- .private-container{
-    background-color: indianred;
+/*My own section design starts here*/
+.private-container {
+    background: #FFF;
     max-width: 1440px;
     margin: 0 auto;
     text-align: center;
 }
-.packages{
+
+.packages {
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     font-size: 2.5rem;
 }
+
+.package-div-images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.adventur-title {
+    font-size: 2rem;
+    color: #FF5400;
+}
+
+.para {
+    color: #5A5A5D;
+}
+
+.btn-book {
+    border-radius: 10px;
+    background-color: indianred;
+    color: #FFF;
+    font-size: 1.5rem;
+    padding: 15px;
+    margin-bottom: 30px;
+    border: 0;
+}
+
 /*My own section design ends here*/
 
 
@@ -722,7 +779,6 @@ ul {
     .deals-discount-container,
     .image-one img {
         width: 335px;
-        height: 500px;
         object-fit: cover;
     }
 
@@ -733,4 +789,18 @@ ul {
     }
 
     /*Deals and Discount responsive ends*/
+
+
+    /*Private section responsive starts*/
+    .package-div-images img, .adventur-title {
+        width: 335px;
+        font-size: 1.2rem;
+        object-fit: cover;
+        margin-left: 100px;
+        border: 2px solid red;
+    }
+    .para{
+        font-size: 1rem;
+    }
+    /*Private section responsive ends*/
 }
