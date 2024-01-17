@@ -112,6 +112,12 @@ body {
     color: #FFF;
     font-size: 1.25rem;
     padding: 10px;
+    cursor: pointer;
+}
+.submit:hover{
+    background-color: antiquewhite;
+    color: #131318;
+    transition: 0.5s;
 }
 .fa-solid{
     width: 10px;
@@ -172,7 +178,14 @@ ul {
     font-size: 1.25rem;
     font-weight: 800;
     padding: 14px 25px;
+    cursor: pointer;
 }
+.read-btn:hover{
+    background-color: antiquewhite;
+    color: #131318;
+    transition: 0.5s;
+}
+
 
 /*Our Popular tour section ends here*/
 
@@ -219,7 +232,6 @@ ul {
 
 .grid-item-1 {
     grid-column: 1/span 6;
-
 }
 
 .grid-item-2 {
@@ -476,9 +488,17 @@ ul {
     font-family: Mulish;
     font-size: 1.25rem;
     font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s;
 }
 
-.book {
+.price:hover{
+    background-color: beige;
+    color: #131318;
+    transition: 0.5s;
+}
+
+.book{
     width: 150px;
     height: 52px;
     border-radius: 8px;
@@ -490,6 +510,11 @@ ul {
     font-size: 1.25rem;
     font-weight: 800;
     padding: 10px 20px;
+    cursor: pointer;
+}
+.book:hover{
+    background-color: beige;
+    color: #131318;
 }
 
 .information-two {
@@ -522,7 +547,7 @@ ul {
     border: 0;
 }
 
-.book_btn {
+.book_btn{
     display: flex;
     align-items: center;
     width: 220px;
@@ -538,9 +563,14 @@ ul {
     font-family: Mulish;
     font-size: 1.25rem;
     font-weight: 800;
-
-
+    cursor: pointer;
 }
+.book_btn:hover{
+    background-color: beige;
+    color: #131318;
+    transition: 0.5s;
+}
+
 
 /*Deals and Discount ends here*/
 
@@ -572,14 +602,20 @@ ul {
     color: #5A5A5D;
 }
 
-.btn-book {
+.btn-book{
     border-radius: 10px;
-    background-color: indianred;
+    background-color: #FF5400;
     color: #FFF;
     font-size: 1.5rem;
-    padding: 15px;
+    padding: 10px;
     margin-bottom: 30px;
     border: 0;
+    cursor: pointer;
+}
+.btn-book:hover{
+    background-color: beige;
+    color: #131318;
+    transition: 0.5s;
 }
 
 /*My own section design ends here*/
@@ -629,6 +665,12 @@ ul {
     font-size: 1.25rem;
     padding: 15px 25px;
     margin-top: 50px;
+    cursor: pointer;
+}
+.see-more-btn:hover{
+    background-color: beige;
+    color: #131318;
+    transition: 0.5s;
 }
 
 /*Simple container design ends here*/
@@ -685,6 +727,12 @@ ul {
     text-align: center;
     font-family: Mulish;
     font-size: 1.25rem;
+    cursor: pointer;
+}
+.subscribe:hover{
+    background-color: beige;
+    color: #131318;
+    transition: 0.5s;
 }
 
 .card{
