@@ -110,6 +110,14 @@ body {
     background: #FF5400;
     border: 0;
     color: #FFF;
+    font-size: 1.25rem;
+    padding: 10px;
+}
+.fa-solid{
+    width: 10px;
+    margin-left: 7px;
+    padding-right: 15px;
+    visibility: visible;
 }
 
 /*Our Popular tour section start here*/
@@ -127,7 +135,7 @@ body {
     width: 50%;
 }
 
-.image-container {
+.image-container-section{
     width: 50%;
 }
 
@@ -632,6 +640,7 @@ ul {
     max-width: 1440px;
     margin: 0 auto;
     margin-top: 50px;
+    position: relative;
 }
 
 .form-container {
@@ -671,8 +680,37 @@ ul {
     background: #FF5400;
     margin-top: 50px;
     border: 0;
+    color: #fff;
+    font-weight: 800;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 1.25rem;
 }
 
+.card{
+    position: relative;
+    left: 675px;
+}
+
+.travel-com {}
+
+.travel {
+    font-size: 1.5rem;
+    margin-left: 50px;
+    font-weight: 400;
+}
+
+.save {
+    position: absolute;
+    top: 250px;
+    right: 40px;
+    z-index: 1;
+    transform: rotate(-19.628deg);
+    color: #FFF;
+    font-family: Mulish;
+    font-size: 2rem;
+    font-weight: 800;
+}
 
 /*Input section ends here*/
 
@@ -680,38 +718,45 @@ ul {
 .footer {
     max-width: 1440px;
     margin: 0 auto;
+    text-align: justify;
 }
 
-.logo-div {
-
+.footer-title {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
 }
-.logo-div img{
-    align-items: center;
-}
-.tour-travel{
-    text-align: center;
-}
-.shortpara {
-    color: #5A5A5D;
-    text-align: center;
+
+.text-title {
+    color: var(--Dark-01, #131318);
     font-family: Mulish;
-    font-weight: 400;
+    font-size: 2rem;
+    font-weight: 800;
 }
-.div-icon{
-  display: flex;
-  justify-content: center;
-  padding: 10px;
-  gap:20px;
+
+.para-div {
+    width: 60%;
+    display: flex;
+    margin: 0 auto;
 }
-.copy{
+
+.social-icon {
     display: flex;
     justify-content: center;
 }
 
+.fa-brands {
+    margin-right: 20px;
+    width: 20px;
+    height: 20px;
+}
+
+.copy {
+    text-align: center;
+    color: #131318;
+    font-weight: 300;
+}
 
 /*Footer section ends here*/
 
@@ -797,6 +842,7 @@ ul {
         flex-direction: column;
         width: 100%;
         padding: 5px 0;
+        object-fit: cover;
     }
 
     .banner-title {
@@ -814,9 +860,12 @@ ul {
         flex-direction: column;
         align-items: center;
         margin-top: 65px;
+        margin-left: 20px;
         gap: 16px;
         border-radius: 8px;
         background: rgba(255, 255, 255, 0.30);
+        padding: 20px;
+        width: 260px;
     }
 
     input[type=text] {
@@ -828,13 +877,22 @@ ul {
         width: 245px;
 
     }
-
+    .submit{
+        font-size: 1.24rem;
+        font-family: 'Mulish';   
+    }
+   
     /*Banner responsive ends here*/
 
     /*Our popular tour section responsive start here*/
     .section-container {
         flex-direction: column;
         width: 335px;
+    }
+    .fa-solid{
+        width: 10px;
+        margin-left: 7px;
+        padding-right: 15px;
     }
 
     .text-container {
@@ -850,10 +908,9 @@ ul {
         padding-left: 15px;
     }
 
-    .image-container {
-        width: 100%;
+    .image-container-section img{
+        width: 335px;
     }
-
     /*Our popular tour section responsive ends here*/
 
     /*grid content responsive starts here*/
@@ -871,13 +928,61 @@ ul {
         padding: 5px;
     }
 
-    .images-container {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(7, 1fr);
+    .image-container, .grid-item-1, .grid-item-2,
+    .grid-item-3, .grid-item-4, .grid-item-5,
+     .grid-item-6, .grid-item-7{
+        grid-column: 1/ span12;
     }
+    .image-container, .Maldives{
+        position: absolute;
+        font-size: 1rem;
+        margin-left: 150px;
+        margin-top: 130px;
+    }
+    .image-container, .Indonesia{
+        position: absolute;
+        font-size: 1rem;
+        margin-left: 150px;
+        margin-top: 390px;
+    }
+    .image-container, .Srilanka{
+        position: absolute;
+        font-size: 1rem;
+        margin-left: 150px;
+        margin-top: 670px;
+    }
+    .image-container, .North-America{
+        position: absolute;
+        font-size: 1rem;
+        margin-left: 120px;
+        margin-top: 920px;
+    }
+    .image-container, .Bangladesh{
+        position: absolute;
+        font-size: 1rem;
+        margin-left: 120px;
+        margin-top: 1220px;
+    }
+    .image-container, .Bandarban{
+        position: absolute;
+        font-size: 1rem;
+        margin-left: 120px;
+        margin-top: 1500px;
+    }
+    .image-container, .Kashmir{
+        position: absolute;
+        font-size: 1rem;
+        margin-left: 130px;
+        margin-top: 1700px;
+    }
+    
+
+
 
     /*grid content responsive ends here*/
 
+
+    
     /*Why chose us responsive starts here*/
     .main-div,
     .chose-container,
@@ -918,7 +1023,13 @@ ul {
     .information-three {
         display: none;
     }
-
+.text-container .text{
+        color: #131318;
+        text-align: center;
+        font-family: Mulish;
+        font-weight: 800;
+        margin-top: 24px;
+    }
     /*Deals and Discount responsive ends*/
 
 
@@ -928,15 +1039,16 @@ ul {
         width: 335px;
         font-size: 1.2rem;
         object-fit: cover;
-        margin-left: 100px;
-        border: 2px solid red;
+        margin: 0 auto;
     }
-
+   
+  
     .para {
         font-size: 1rem;
     }
-
     /*Private section responsive ends*/
+
+
 
     /*Simple section responsive starts*/
     .simple-text-div,
@@ -950,10 +1062,11 @@ ul {
     .simple-title {
         font-size: 1.25rem;
     }
-
     /*Simple section responsive ends*/
 
-    /*Input section starts here*/
+
+
+    /*Input section responsive starts here*/
     .form-container {
         flex-direction: column;
     }
@@ -966,17 +1079,51 @@ ul {
         font-size: 1.2rem;
     }
 
-    .input {
-        width: 335px;
+    .input{
+        width: 250px;
         padding: 0px;
     }
-
+    
     .div-second img,
     .subscribe {
         width: 335px;
     }
+    .div-second, .card{
+        display: none;
+    }
 
     /*Input section ends here*/
+
+    /*Footer Section responsive starts here*/
+    .footer {
+        width: 335px;
+        margin: 0 auto;
+        text-align: justify;
+    }
+
+    .footer-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .text-title h1{
+        color: #131318;
+        font-size: 1.25rem;
+        margin:10px;
+        
+    }
+
+    .logo img {
+        width: 35.664px;
+        height: 30.517px;
+    }
+    .para-div, .footer-description{
+        width: 335px;
+    }
+
+    /*Footer Section responsive ends here*/
 
 
 }
